@@ -14,9 +14,9 @@ jobs:
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ngrok.
-      run: .\ngrok\ngrok.exe authtoken 27TVsmH7qbl7p3wHlA9TX5i32dJ_7YNdwonSwSC3k7SLHJ5GD
+      run: .\ngrok\ngrok.exe authtoken 27TjcZCsToJCi4Mrfrbr7jDBCu3_7vFTVA9dEpd3kzZWqY221
       env:
-        NGROK_AUTH_TOKEN: 27TVsmH7qbl7p3wHlA9TX5i32dJ_7YNdwonSwSC3k7SLHJ5GD
+        NGROK_AUTH_TOKEN: 27TjcZCsToJCi4Mrfrbr7jDBCu3_7vFTVA9dEpd3kzZWqY221
     - name: Windows10 RDP.
       run: |
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
